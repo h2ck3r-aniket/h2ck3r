@@ -1,14 +1,23 @@
-# Subdomain Enumeration:
-1. subfinder -dL domains.txt | httpx -mc 200 | tee urls.txt
-2. cat urls.txt | waybackurls | tee wb.txt
-3. cat wb.txt | httpx -mc 200 -ct | tee any.txt
-4. grep for /json /javascript _ grab all urls save into js.txt
-5. cat any.txt | grep /javascrip | json
-COPY all urls and save into js.txt
-
-1. subfinder -dL domains.txt | httpx -mc 400,401,403,404 | tee urls.txt
-2. cat urls.txt | waybackurls | tee wb.txt
-3. cat wb.txt | httpx -mc 200 -ct | tee any.txt
-4. grep for /json /javascript _ grab all urls save into js.txt
-5. cat any.txt | grep /javascrip | json
-COPY all urls and save into js.txt
+#### TLD Enumeration:
+```
+crt domain | tee -a 
+```
+#### Subdomain Enumeration:
+```
+subfinder -dL domains.txt | httpx -mc 200 | tee urls.txt
+```
+```
+subfinder -dL domains.txt | httpx -mc 400,401,403,404 | tee urls.txt
+```
+#### Urls Enumeration save into js.txt
+```
+cat urls.txt | waybackurls | tee waybackurls.txt
+```
+```
+cat waybackurls.txt | httpx -mc 200 -ct | tee liveurls.txt
+```
+#### Json/Js Enumeration (COPY all urls and save into js.txt)
+```
+cat liveurls.txt | grep /javascript | json > js.txt
+```
+#### GitHub Targeting
