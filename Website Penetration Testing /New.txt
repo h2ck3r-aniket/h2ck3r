@@ -1,4 +1,4 @@
-#Subdomain Enumeration:
+# Subdomain Enumeration:
 1. subfinder -dL domains.txt | httpx -mc 200 | tee urls.txt
 2. cat urls.txt | waybackurls | tee wb.txt
 3. cat wb.txt | httpx -mc 200 -ct | tee any.txt
