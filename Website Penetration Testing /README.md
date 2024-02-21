@@ -1,4 +1,5 @@
 #### GitHub Targeting
+```
 Company-Based Search : Arif BMW - BMW - github
 https://github.com/solobat/Steward/blob/bf207462ea597cc9af2db18c8be57eed77175dc7/extension/service/nasa.ts#L5
 https://github.com/ireade/boilerplate-service-worker/blob/2d6a39e6a1eb509c100ee801f505fdf86a34c496/src/js/app.js#L40
@@ -14,7 +15,7 @@ Syntax for GitHub Search
 Various syntaxes and keywords for targeted GitHub searches.
 https://github.com/random-robbie/keywords/blob/master/keywords.txt
 
-citigroup github
+Citigroup github
 Golden Rule
 Without an exploit, do not report anything.
 
@@ -32,4 +33,4 @@ Detailed case study including potential impact on reputation, financial loss, an
 General Impact Factors
 Public Reputation
 Financial Loss
-
+```
