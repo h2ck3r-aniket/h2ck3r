@@ -16,8 +16,14 @@ cat urls.txt | waybackurls | tee waybackurls.txt
 ```
 cat waybackurls.txt | httpx -mc 200 -ct | tee liveurls.txt
 ```
+```
+cat all-live.txt | gauplus -subs -b png,jpg,gif,jpeg,swf,woff,gif,svg -o allUrls.txt
+```
 #### Json/Js Enumeration (COPY all urls and save into js.txt)
 ```
 cat liveurls.txt | grep /javascript | json > js.txt
 ```
 #### GitHub Targeting
+
+
+#### Nuclei
