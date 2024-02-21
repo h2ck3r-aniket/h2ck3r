@@ -34,3 +34,9 @@ General Impact Factors
 Public Reputation
 Financial Loss
 ```
+```
+subfinder -d microsoft.com | httpx | tee msrc.txt
+cat msrc.txt | waybackurls | tee waybackmsrc.txt
+cat waybackmsrc.txt | grep configuration.js
+Retrieve Microsoft subdomains and check for sensitive files.
+```
